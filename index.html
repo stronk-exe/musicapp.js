@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sheet.css">
+    <title>Music player App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div id="background">
+                <div id="blacklayer"></div>
+                <img src="images/airplans.jpg" id="bgimage">
+            </div>
+            <div id="menu">
+                <img src="images/menu.png">
+                <img src="images/search.png">
+            </div>
+            <div id="volume">
+                <img src="images/volume-low.png">
+                <input type="range" class="slider" id="volumeSlider" min="0" max="100" value="100" step="1">
+                <img src="images/volumn-high.png" id="volumeUp">
+            </div>
+            <div id="image-music">
+                <div id="circle-img">
+                    <img src="images/airplans.jpg" id="image">
+                </div>
+                <div id="music-title">
+                    <h5 id="playlist-statue">SALAMA</h5>
+                    <h6 id="playlist-artist">malk!</h6>
+                </div>
+            </div>
+                <div id="music-menu">
+                    <button id="random"><img src="images/random.png"></button>
+                    <button id="mute-btn"><img src="images/speaker.png"></button>
+                </div>
+                <div id="currentTime">
+                    <span id="currTimeText">00:00</span>
+                    <span id="durTimeText">00:00</span>
+                </div>
+                <input type="range" class="seekSlider" id="seekSlider" min="0" max="100" value="0" step="1">
+                <div id="buttons">
+                    <button id="repeat" class="repeat"><img src="images/rep.png"></button>
+                    <div>
+                        <button id="pre-btn" class="pre"><img src="images/backward.png"></button>
+                        <button id="playPause-btn" class="play"><img src="images/play-red.png"></button>
+                        <button id="next-btn" class="next"><img src="images/forward.png"></button>
+                    </div>
+                    <span id="like"><i class="far fa-heart" aria-hidden="true"></i></span>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/129f6e5c37.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
